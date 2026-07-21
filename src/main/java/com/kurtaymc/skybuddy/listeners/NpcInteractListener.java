@@ -77,8 +77,6 @@ public class NpcInteractListener implements Listener {
 
         if (e instanceof Bee) {
             Bee bee = (Bee) e;
-            // HATA ÇÖZÜMÜ: Eğer arı menüden bilerek kızdırılmışsa (sinir > 999999 ise) dokunma.
-            // Sadece oyun mekanikleriyle yanlışlıkla kızmışsa sıfırla.
             if (bee.getAnger() > 0 && bee.getAnger() < 999999) {
                 bee.setAnger(0);
             }
@@ -114,7 +112,6 @@ public class NpcInteractListener implements Listener {
                 openLlamaMenu(player);
             } else if (e.getType() == EntityType.BEE) {
                 Bee bee = (Bee) e;
-                // Aynı kontrolü buraya da ekliyoruz
                 if (bee.getAnger() > 0 && bee.getAnger() < 999999) {
                     bee.setAnger(0);
                 }

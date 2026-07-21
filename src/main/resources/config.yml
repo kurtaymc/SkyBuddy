@@ -5,13 +5,13 @@ language: "en"
 entity-type: "BEE"
 
 spawn-offset:
-  x: 0.0
-  y: 0.0
-  z: 0.0
-  yaw: 0.0
+  x: 0.5 # Recommended center offset for BSkyBlock classic island (Bee: 0.5 | Trader Llama: 2.5)
+  y: 6.0 # Recommended height for BSkyBlock classic island (Bee: 6.5 | Trader Llama: 5.0)
+  z: 5.0 # Recommended center offset for BSkyBlock classic island (Bee: 6.0 | Trader Llama: 2.5)
+  yaw: 180.0 # The direction the assistant will face when spawned (180.0 makes it face south/towards the player)
 
 # Default size of the buddy when spawned (ADULT or BABY)
 default-size: "ADULT"
 
 # Command to execute when a player right-clicks the buddy (Do not include '/')
-click-command: "is"
+click-command: "is controlpanel"

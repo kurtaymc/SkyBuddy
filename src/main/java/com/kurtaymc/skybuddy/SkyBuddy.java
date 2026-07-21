@@ -212,14 +212,12 @@ public class SkyBuddy extends JavaPlugin {
             }
         }
 
-        // HATA ÇÖZÜMÜ: RAM silinmelerine karşı fiziksel alan taraması eklendi.
-        // Asistan'ın etrafındaki "hayalet" kalmış eski hologramları bulup tamamen siler.
         Location loc = buddy.getLocation();
         if (loc != null && loc.getWorld() != null) {
             for (Entity e : loc.getWorld().getNearbyEntities(loc, 3.0, 5.0, 3.0)) {
                 if (e instanceof ArmorStand && e.getPersistentDataContainer().has(this.npcKey, PersistentDataType.BYTE)) {
                     Byte type = e.getPersistentDataContainer().get(this.npcKey, PersistentDataType.BYTE);
-                    if (type != null && type == (byte) 2) { // 2 = Sadece Hologramları hedef alır
+                    if (type != null && type == (byte) 2) {
                         e.remove();
                     }
                 }
@@ -230,7 +228,6 @@ public class SkyBuddy extends JavaPlugin {
     public void createHolograms(Entity buddy, Location spawnLoc, boolean isAdult) {
         if (this.holoLines == null || this.holoLines.isEmpty()) return;
 
-        // Hologramlara da ada ID'si tanımlanıyor.
         String islandId = null;
         if (buddy.getPersistentDataContainer().has(this.islandKey, PersistentDataType.STRING)) {
             islandId = buddy.getPersistentDataContainer().get(this.islandKey, PersistentDataType.STRING);

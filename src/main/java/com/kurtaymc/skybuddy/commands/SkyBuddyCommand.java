@@ -37,7 +37,6 @@ public class SkyBuddyCommand implements CommandExecutor {
                 Player player = (Player) sender;
                 Location center = plugin.getIslandCenter(player);
 
-                // BUG 1 FIX: Adanın merkezi null dönüyorsa oyuncu koordinatını kopyalama, işlemi iptal et.
                 if (center == null) {
                     player.sendMessage(plugin.getMessage("need-island"));
                     return true;
