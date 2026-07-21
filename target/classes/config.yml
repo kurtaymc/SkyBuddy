@@ -1,0 +1,17 @@
+# Language file to use (e.g., tr, en)
+language: "en"
+
+# Entity type for the buddy (Supported types: TRADER_LLAMA, BEE)
+entity-type: "BEE"
+
+spawn-offset:
+  x: 0.0
+  y: 0.0
+  z: 0.0
+  yaw: 0.0
+
+# Default size of the buddy when spawned (ADULT or BABY)
+default-size: "ADULT"
+
+# Command to execute when a player right-clicks the buddy (Do not include '/')
+click-command: "is"

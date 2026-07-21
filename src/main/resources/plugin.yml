@@ -1,0 +1,22 @@
+name: SkyBuddy
+version: 1.0
+main: com.kurtaymc.skybuddy.SkyBuddy
+api-version: 1.16
+author: KurtayMC
+description: Advanced Island Companion Plugin
+
+softdepend: [BentoBox, SuperiorSkyblock2]
+
+commands:
+  skybuddy:
+    description: Main command for SkyBuddy
+    aliases: [sb, buddy]
+    permission: skybuddy.use
+
+permissions:
+  skybuddy.use:
+    description: Allows usage of basic buddy commands
+    default: true
+  skybuddy.admin:
+    description: Admin permissions for SkyBuddy
+    default: op
