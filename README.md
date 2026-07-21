@@ -23,6 +23,10 @@
   <img src="https://i.imgur.com/MRsWd5b.gif" width="45%"/>
   <img src="https://i.imgur.com/HjZbwZx.gif" width="45%"/>
 </p>
+<p align="center">
+  <img src="https://i.imgur.com/WjLRM2B.png" width="45%"/>
+  <img src="https://i.imgur.com/ZyBA9gk.png" width="45%"/>
+</p>
 
 ## 🛠️ Commands & Permissions
 
